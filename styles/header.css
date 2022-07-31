@@ -1,0 +1,140 @@
+
+/* HEADER */
+
+header {
+    margin-bottom:70px;
+    padding: 10px 20px;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display:flex;
+    list-style:none;
+    justify-content:flex-end;
+    align-items: center;
+    gap:20px;
+}
+
+header nav .initiales {
+    font-size:2rem;
+    font-weight: bold;
+}
+
+header nav .initiales::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    vertical-align: baseline;
+    transform: translateY(-7px);
+}
+
+
+
+@media screen and (max-width:768px) {
+    header nav ul li:not(:last-child) {
+        display:none;
+    }
+}
+
+header nav ul li a {
+    font-variant: all-small-caps;
+    letter-spacing: -1px;
+    font-weight: 600;
+    font-size:1.2rem;
+    padding: 5px 0;
+}
+
+header nav ul li:hover a::after {
+    width: 100%;
+}
+
+header nav ul li a::after {
+    content: '';
+    background:var(--secondary-color);
+    height:3px;
+    width: 0%;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: -3px;
+    transition: width .2s ease-in-out;
+}
+
+header nav ul li button {
+    padding: 8px 20px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #f94d1e;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-variant: all-small-caps;
+    cursor:pointer;
+}
+
+
+/* Présentation */
+#presentation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width:70vw;
+    display:flex;
+    align-items:center;
+}
+
+#presentation > * {
+    flex-basis:50%;
+}
+
+#presentation > :first-child h4.roles {
+    font-style: bold;
+    letter-spacing: -1px;
+    color: var(--secondary-color);
+    margin-bottom:10px;
+    font-family: 'Oswald';
+}
+
+#presentation > :first-child h4.name {
+    font-family: 'Oswald';
+    letter-spacing: -2px;
+    color: var(--primary-color);
+    font-size:3rem;
+    margin-bottom:30px;
+    line-height: 3rem;
+}
+
+#presentation > :first-child p {
+   font-weight: 400;
+   margin-bottom: 0px;
+}
+
+#presentation > :first-child button {
+    padding: 17px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: .8rem;
+    margin: 30px 0;
+    cursor: pointer;
+ }
+
+ #presentation > :last-child {
+    width:100%;
+ }
