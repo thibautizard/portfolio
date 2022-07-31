@@ -4,7 +4,9 @@
   "description": "Site personnel de Thibaut Izard",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./styles/main.scss:./styles/main.css --style compressed",
+    "prefix" : "postcss ./styles/main.css --use autoprefixer -d ./styles/main.css"
   },
   "repository": {
     "type": "git",
@@ -12,6 +14,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/thibautizard/portofolio/issues"
   },

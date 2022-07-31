@@ -1,0 +1,8 @@
+.fil-ariane {
+    height: 100%;
+    position: absolute;
+    left:50%;
+    width:2px;
+    background-color: var(--secondary-color);
+    transform: translate(-50%, calc(92vh + 10px));
+}

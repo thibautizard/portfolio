@@ -10,28 +10,27 @@
         <title>Thibaut Izard - Développeur</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/fonts.css">
-        <link rel="stylesheet" href="styles/global.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/realisations.css">
-        <link rel="stylesheet" href="styles/competences.css">
-        <link rel="stylesheet" href="styles/collaborations.css">
-        <link rel="stylesheet" href="styles/recommandations.css">
-        <link rel="stylesheet" href="styles/components/card.css">
-        <link rel="stylesheet" href="styles/components/reseaux.css">
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="scripts/animation.js" defer></script>
         <script src="scripts/collaboration.js" defer></script>
     </head>
     <body>
+
+        <!-- FIL D'ARIANE -->
+        <div class="fil-ariane"></div>
+
         <!-- HEADER -->
         <header>
-            <nav>
-                <p class="initiales">TI</p>
-                <ul>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#realisations">Réalisations</a></li>
-                    <li><a href="#collaboration">Votre prestation</a></li>
+            <nav data-aos="fade-down" data-aos-duration="1500">
+                <a href="" class="initiales">TI</a>
+                <ul class="liens">
+                    <li class="lien"><a href="#competences">Compétences</a></li>
+                    <li class="lien"><a href="#realisations">Réalisations</a></li>
+                    <li class="lien"><a href="#collaboration">Votre prestation</a></li>
                     <li><button>Me contacter</button></li>
                 </ul>
             </nav>
@@ -39,22 +38,22 @@
             <!-- Présentation -->
             <section id="presentation">
 
-
                 <!-- description -->
-                <div>
+                <div class="text"  data-aos="zoom-out" data-os-delay="1000" data-aos-duration="1500">
                     <h4 class="roles"> FRONTEND DEVELOPER • UX/UI DESIGNER </h4>
-                    <h4 class="name">  THIBAUT 
+                    <h4 class="name">  THIBAUT
                         <br/>           IZARD
                     </h4>
                     <p> Développeur et UX/UI designer basé à <b>Toulouse</b> et <b>Paris</b> (France).</p>
                     <p> 👋 Besoin d'aide pour votre projet ? <a href="#collaboration" style="font-weight:600; cursor:pointer;">Parlons-en</a></p>
-                    <button><a href="#collaboration">COMMENT TRAVAILLER AVEC MOI</a></button>
+                    <button><a href="#collaborations">COMMENT TRAVAILLER AVEC MOI</a></button>
                 </div>
 
                 <!-- illustration -->
-                <img src="./static/img/photo.png"/>
+                <img src="./static/img/photo.png" data-aos="zoom-out" data-aos-duration="1500"/>
 
             </section>
+            <a href="#realisations" data-aos="fade-down"  data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom" class="scroll"></a>
         </header>
 
         <!-- MAIN -->
@@ -62,14 +61,14 @@
 
 
 
-            <!-- Projets -->
-            <section id="realisations">
+            <!-- Réalisations -->
+            <section data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" id="realisations">
                 <h2>
                     <span class="titre">Réalisations</span>
                     <span class="line"></span>
                 </h2>
 
-             
+
                 <!-- Carroussel projets -->
                 <div class="carroussels">
 

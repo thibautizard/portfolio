@@ -1,48 +1,3 @@
-:root {
-    --background-color : #07111a;
-    --primary-color    : #ffffff;
-    --secondary-color  : #16b572;
-
-}
-
-html {
-    scroll-behavior: smooth;
-    color:white;
-    font-family: 'Courier New', Courier, monospace;
-    scrollbar-width: none;
-  }
-
-*, ::after, ::before {
-    font-family: 'Montserrat';
-    margin: 0;
-    padding:0;
-    border:none;
-    outline:none;
-    position:relative;
-    object-fit:border-box;
-}
-
-a {
-    color:unset;
-    text-decoration: none;
-}
-
-body {
-
-    background:var(--background-color);
-
-    width:100vw;
-    max-width:1800px;
-    min-height:100vh;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-
-
-
-/* MAIN */
-
 main {
     display:flex;
     flex-direction:column;
@@ -88,30 +43,3 @@ main section h2 .line {
     height: 7px;
     background: var(--secondary-color);
 }
-
-
-
-/* COLLABORATION */
-
-
-/* RECOMMANDATIONS */
-
-
-/* FOOTER */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

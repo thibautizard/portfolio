@@ -1,9 +1,9 @@
 /* Projets */
 
 :root {
-    
-    --carroussel-shadow-gauche: black -10px 0px 25px;
-    --carroussel-shadow-droit: black 10px 0px 25px;
+
+    --carroussel-shadow-gauche: rgba(0,0,0,.6) -10px 0px 50px 20px;
+    --carroussel-shadow-droit: rgba(0,0,0,.6) 10px 0px 50px 20px;
 
     --duree            : 80s;
     --miniature-width  : 420px;
@@ -13,7 +13,7 @@
 }
 
 #realisations {
-    width:100vw;
+  align-items: flex-start;
 }
 
 #realisations .carroussels {
@@ -27,7 +27,7 @@
     text-align : center;
     display    : flex;
     align-items: center;
-}  
+}
 
 #realisations .carroussel::before, .carroussel::after {
     content: '';
@@ -43,12 +43,15 @@
     box-shadow: var(--carroussel-shadow-gauche);
     transform: translateX(100%);
     z-index: 1;
+    height:65%;
 }
 
 #realisations .carroussel::after {
     left: 0;
     box-shadow: var(--carroussel-shadow-droit);
     transform: translateX(-100%);
+    z-index: 1;
+    height:65%;
 }
 
 

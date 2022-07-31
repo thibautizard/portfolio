@@ -1,0 +1,39 @@
+:root {
+    --background-color : #07111a;
+    --primary-color    : #ffffff;
+    --secondary-color  : #16b572;
+
+}
+
+*, ::after, ::before {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding:0;
+    border:none;
+    outline:none;
+    position:relative;
+    object-fit:border-box;
+}
+
+a {
+    color:unset;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    scrollbar-width: none;
+  }
+
+body {
+
+    background:var(--background-color);
+    margin:auto;
+    width:100vw;
+    max-width:1800px;
+    min-height:100vh;
+    padding: 0 50px;
+    box-sizing: border-box;
+}

@@ -1,3 +1,13 @@
+AOS.init();
+
+window.addEventListener("scroll", (_) => {
+  const scroll = document.querySelector(".scroll");
+  const position = parseInt(window.scrollY);
+  scroll.setAttribute("data-aos-delay", "0");
+  console.log(window.scrollY);
+  scroll.style.opacity = position !== 0 ? "0" : "1";
+});
+
 // Création des miniatures
 const cardHTML = (card) => {
   const i = Math.floor(Math.random() * 8 + 1);
@@ -26,8 +36,6 @@ const cardHTML = (card) => {
             </div>
           </div>`;
 };
-
-
 
 const cardsInfos = {
   projets: [
@@ -93,38 +101,37 @@ const cardsInfos = {
   ],
 };
 
-
-document.querySelectorAll(".carroussel.projets .container").forEach(
+document
+  .querySelectorAll(".carroussel.projets .container")
+  .forEach(
     (container) =>
-      (container.innerHTML = cardsInfos.projets
-        .map(cardHTML)
-        .join("\n"))
+      (container.innerHTML = cardsInfos.projets.map(cardHTML).join("\n"))
   );
 
 document
   .querySelectorAll(".carroussel.maquettes .container")
   .forEach(
     (container) =>
-      (container.innerHTML = cardsInfos.maquettes
-        .map(cardHTML)
-        .join("\n"))
+      (container.innerHTML = cardsInfos.maquettes.map(cardHTML).join("\n"))
   );
 
-const cards             = Array.from(document.querySelectorAll(".card"));
-const rotationIntensity = getComputedStyle(document.documentElement).getPropertyValue("--rotation-intensity");
-const overlayFactor     = getComputedStyle(document.documentElement).getPropertyValue("--overlay-factor");
+const cards = Array.from(document.querySelectorAll(".card"));
+const rotationIntensity = getComputedStyle(
+  document.documentElement
+).getPropertyValue("--rotation-intensity");
+const overlayFactor = getComputedStyle(
+  document.documentElement
+).getPropertyValue("--overlay-factor");
 
 cards.forEach((card) => {
   card.addEventListener("pointermove", animateCard);
   card.addEventListener("mouseout", restoreCardDimensions);
 });
 
-
 function animateCard(e) {
-
-  let card    = e.currentTarget;
+  let card = e.currentTarget;
   let overlay = card.querySelector(".overlay");
-  let image   = card.querySelector("img");
+  let image = card.querySelector("img");
 
   card.style.transitionDuration = "0ms";
   overlay.style.transitionDuration = "0ms";
@@ -135,18 +142,35 @@ function animateCard(e) {
   const [x, y] = [e.clientX - rect.left, e.clientY - rect.top];
 
   // Overlay
-  overlay.style.transform = `translate3d(${-((x * (100 / overlayFactor)) / rect.width - 50 / overlayFactor)}%,
-                                         ${-((y * (100 / overlayFactor)) / rect.height -50 / overlayFactor)}%, 
+  overlay.style.transform = `translate3d(${-(
+    (x * (100 / overlayFactor)) / rect.width -
+    50 / overlayFactor
+  )}%,
+                                         ${-(
+                                           (y * (100 / overlayFactor)) /
+                                             rect.height -
+                                           50 / overlayFactor
+                                         )}%,
                                          0)`;
 
-  overlay.style.opacity = Math.abs(rect.width / 2 - x) / rect.width + Math.abs(rect.height / 2 - y) / rect.height;
-  
-  card.style.transform = `rotateX(${(-(y / (rect.height / 2) - 1) * rotationIntensity)}deg)
-                          rotateY(${((x / (rect.width / 2) - 1) * rotationIntensity)}deg)`;
+  overlay.style.opacity =
+    Math.abs(rect.width / 2 - x) / rect.width +
+    Math.abs(rect.height / 2 - y) / rect.height;
 
-  image.style.transform = `scale(1.1) 
-                           translateX(${((rect.width - x) / rect.width - 0.5) * 25}px)
-                           translateY(${((rect.height - y) / rect.height - 0.5) * 25}px)`;
+  card.style.transform = `rotateX(${
+    -(y / (rect.height / 2) - 1) * rotationIntensity
+  }deg)
+                          rotateY(${
+                            (x / (rect.width / 2) - 1) * rotationIntensity
+                          }deg)`;
+
+  image.style.transform = `scale(1.1)
+                           translateX(${
+                             ((rect.width - x) / rect.width - 0.5) * 25
+                           }px)
+                           translateY(${
+                             ((rect.height - y) / rect.height - 0.5) * 25
+                           }px)`;
 }
 
 function restoreCardDimensions(e) {
@@ -161,7 +185,3 @@ function restoreCardDimensions(e) {
   image.style.transform = "scale(1.05)";
   overlay.style.opacity = "0";
 }
-
-
-
-
