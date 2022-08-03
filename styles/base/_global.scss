@@ -15,6 +15,10 @@
     object-fit:border-box;
 }
 
+em {
+    font-style:normal;
+}
+
 a {
     color:unset;
     text-decoration: none;
@@ -32,8 +36,7 @@ body {
     background:var(--background-color);
     margin:auto;
     width:100vw;
-    max-width:1800px;
     min-height:100vh;
-    padding: 0 50px;
+    padding: 0 2vw;
     box-sizing: border-box;
 }

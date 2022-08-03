@@ -18,28 +18,7 @@ main > section {
 }
 
 main section h2 {
-    margin-bottom:30px;
-    font-size:2rem;
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-}
-
-main section h2.center {
-    flex-direction:column;
-    align-items: center;
-    gap:0px;
-    font-size:3rem;
-}
-
-main section h2 {
-    display:flex;
-    gap:20px;
-}
-
-main section h2 .line {
-    display: inline-block;
-    flex-grow: 1;
-    height: 7px;
-    background: var(--secondary-color);
+    margin: 5px 0 10px 0;
+    font-size:4vw;
+    position: relative;
 }

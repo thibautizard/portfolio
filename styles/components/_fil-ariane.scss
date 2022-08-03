@@ -1,8 +1,26 @@
 .fil-ariane {
-    height: 100%;
+
+    --width: .2vw;
+    --bullet-width: 1.3vw;
+
     position: absolute;
     left:50%;
-    width:2px;
+    height: 100%;
+    width: var(--width);
     background-color: var(--secondary-color);
-    transform: translate(-50%, calc(92vh + 10px));
+    animation: expand 2s 3s both;
+    transform: translate(-50%, 103vh);
+
+    &::after {
+        content: '';
+        width: var(--bullet-width);
+        height: var(--bullet-width);
+        position: absolute;
+        top: 0;
+        background: var(--secondary-color);
+        left: 50%;
+        border-radius: 20px;
+        transform: translate(-50%,0);
+    }
+
 }

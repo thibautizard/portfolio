@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="styles/main.css">
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="scripts/annotations.js" type="module"></script>
         <script src="scripts/animation.js" defer></script>
         <script src="scripts/collaboration.js" defer></script>
     </head>
@@ -28,10 +29,10 @@
             <nav data-aos="fade-down" data-aos-duration="1500">
                 <a href="" class="initiales">TI</a>
                 <ul class="liens">
-                    <li class="lien"><a href="#competences">Compétences</a></li>
                     <li class="lien"><a href="#realisations">Réalisations</a></li>
-                    <li class="lien"><a href="#collaboration">Votre prestation</a></li>
-                    <li><button>Me contacter</button></li>
+                    <li class="lien"><a href="#competences">Compétences</a></li>
+                    <li class="lien"><a href="#recommandations">Recommandations</a></li>
+                    <li><button>Demandez un devis</button></li>
                 </ul>
             </nav>
 
@@ -40,12 +41,11 @@
 
                 <!-- description -->
                 <div class="text"  data-aos="zoom-out" data-os-delay="1000" data-aos-duration="1500">
-                    <h4 class="roles"> FRONTEND DEVELOPER • UX/UI DESIGNER </h4>
+                    <h4 class="roles">Sites et applications web et mobile </h4>
                     <h4 class="name">  THIBAUT
                         <br/>           IZARD
                     </h4>
-                    <p> Développeur et UX/UI designer basé à <b>Toulouse</b> et <b>Paris</b> (France).</p>
-                    <p> 👋 Besoin d'aide pour votre projet ? <a href="#collaboration" style="font-weight:600; cursor:pointer;">Parlons-en</a></p>
+                    <p> <em>Développeur web</em> et <em>UX/UI designer</em> basé à <b>Toulouse</b> (France)</p>
                     <button><a href="#collaborations">COMMENT TRAVAILLER AVEC MOI</a></button>
                 </div>
 
@@ -53,7 +53,7 @@
                 <img src="./static/img/photo.png" data-aos="zoom-out" data-aos-duration="1500"/>
 
             </section>
-            <a href="#realisations" data-aos="fade-down"  data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom" class="scroll"></a>
+            <a href="#realisations" data-aos="fade-down" data-aos-duration="2000"  data-aos-delay="3000" data-aos-anchor-placement="bottom-bottom" class="scroll"></a>
         </header>
 
         <!-- MAIN -->
@@ -62,24 +62,26 @@
 
 
             <!-- Réalisations -->
-            <section data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" id="realisations">
-                <h2>
-                    <span class="titre">Réalisations</span>
-                    <span class="line"></span>
-                </h2>
+            <section  data-aos="zoom-out" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" id="realisations">
+
+                <div class="container">
+
+                    <h2 classs="titre"> Réalisations </h2>
 
 
-                <!-- Carroussel projets -->
-                <div class="carroussels">
+                    <!-- Carroussel projets -->
+                    <div class="carroussels">
 
-                    <div class="carroussel projets">
-                        <div class="container"></div>
-                        <div class="container"></div>
-                    </div>
+                        <div class="carroussel projets">
+                            <div class="container"></div>
+                            <div class="container"></div>
+                        </div>
 
-                    <div class="carroussel maquettes">
-                        <div class="container"></div>
-                        <div class="container"></div>
+                        <div class="carroussel maquettes">
+                            <div class="container"></div>
+                            <div class="container"></div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -158,7 +160,7 @@
             <h4>footer</h4>
         </footer> -->
 
-        <div class="reseaux">
+        <div class="reseaux" data-aos="fade-up" data-aos-duration="1500">
             <ul class="social__StyledSocialList-anu6nt-0 dVLQAC fade-enter-done">
                 <li>
                     <a href="https://github.com/thibautizard" aria-label="GitHub" target="_blank" rel="noreferrer">

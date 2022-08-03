@@ -4,7 +4,6 @@ window.addEventListener("scroll", (_) => {
   const scroll = document.querySelector(".scroll");
   const position = parseInt(window.scrollY);
   scroll.setAttribute("data-aos-delay", "0");
-  console.log(window.scrollY);
   scroll.style.opacity = position !== 0 ? "0" : "1";
 });
 
