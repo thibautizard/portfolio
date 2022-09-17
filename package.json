@@ -1,22 +1,50 @@
 {
-  "name": "site",
+  "name": "portofolio",
   "version": "1.0.0",
   "description": "Site personnel de Thibaut Izard",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack build --config webpack.config.js",
     "sass": "sass --watch ./styles/main.scss:./styles/main.css --style compressed",
-    "prefix" : "postcss ./styles/main.css --use autoprefixer -d ./styles/main.css"
+    "prefix": "postcss ./styles/main.css --use autoprefixer -d ./styles/main.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thibautizard/portofolio.git"
   },
-  "author": "",
+  "author": "Thibaut Izard",
   "license": "ISC",
   "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/thibautizard/portofolio/issues"
   },
-  "homepage": "https://github.com/thibautizard/portofolio#readme"
+  "homepage": "https://github.com/thibautizard/portofolio#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "aos": "^2.3.4",
+    "html-react-parser": "^3.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-rough-notation": "^1.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  }
 }

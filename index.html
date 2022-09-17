@@ -12,91 +12,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles/main.css">
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="scripts/annotations.js" type="module"></script>
-        <script src="scripts/animation.js" defer></script>
-        <script src="scripts/collaboration.js" defer></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     </head>
     <body>
 
-        <!-- FIL D'ARIANE -->
-        <div class="fil-ariane"></div>
 
-        <!-- HEADER -->
-        <header>
-            <nav data-aos="fade-down" data-aos-duration="1500">
-                <a href="" class="initiales">TI</a>
-                <ul class="liens">
-                    <li class="lien"><a href="#realisations">Réalisations</a></li>
-                    <li class="lien"><a href="#competences">Compétences</a></li>
-                    <li class="lien"><a href="#recommandations">Recommandations</a></li>
-                    <li><button>Demandez un devis</button></li>
-                </ul>
-            </nav>
+        <div id="app">
 
-            <!-- Présentation -->
-            <section id="presentation">
-
-                <!-- description -->
-                <div class="text"  data-aos="zoom-out" data-os-delay="1000" data-aos-duration="1500">
-                    <h4 class="roles">Sites et applications web et mobile </h4>
-                    <h4 class="name">  THIBAUT
-                        <br/>           IZARD
-                    </h4>
-                    <p> <em>Développeur web</em> et <em>UX/UI designer</em> basé à <b>Toulouse</b> (France)</p>
-                    <button><a href="#collaborations">COMMENT TRAVAILLER AVEC MOI</a></button>
-                </div>
-
-                <!-- illustration -->
-                <img src="./static/img/photo.png" data-aos="zoom-out" data-aos-duration="1500"/>
-
-            </section>
-            <a href="#realisations" data-aos="fade-down" data-aos-duration="2000"  data-aos-delay="3000" data-aos-anchor-placement="bottom-bottom" class="scroll"></a>
-        </header>
-
+        </div>
         <!-- MAIN -->
-        <main>
+        <!-- <main>
 
 
-
-            <!-- Réalisations -->
-            <section  data-aos="zoom-out" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" id="realisations">
-
-                <div class="container">
-
-                    <h2 classs="titre"> Réalisations </h2>
-
-
-                    <!-- Carroussel projets -->
-                    <div class="carroussels">
-
-                        <div class="carroussel projets">
-                            <div class="container"></div>
-                            <div class="container"></div>
-                        </div>
-
-                        <div class="carroussel maquettes">
-                            <div class="container"></div>
-                            <div class="container"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- Parcours -->
-            <!-- <section id="parcours">
-                <h2>
-                    <span class="line"></span>
-                    <span class="titre">Parcours</span>
-                </h2>
-            </section> -->
-
-            <!-- Compétences -->
             <section id="competences">
                 <h2>
                     <span class="titre">Compétences</span>
@@ -122,7 +49,6 @@
                 </div>
             </section>
 
-            <!-- Recommandations -->
             <section id="recommandations">
                 <h2 class="center">
                     <span class="titre">Ils m'ont récemment fait confiance</span>
@@ -134,7 +60,7 @@
                     <div class="bloc">
                         <p class="quote">J'ai proposé à Thibaut de refondre le site internet de mon média. Je suis très content du résultat !</p>
                         <div class="source">
-                            <img src="static/img/recommandations/nicolas_framont.jpeg" alt="">
+                            <img src="public/img/recommandations/nicolas_framont.jpeg" alt="">
                             <p class="name">Nicolas Framont</p>
                             <p class="role">Rédacteur en chef du magazine Frustration</p>
                         </div>
@@ -143,7 +69,7 @@
                     <div class="bloc">
                         <p class="quote">J'ai travaillé avec Thibaut sur plusieurs projets. Il a fait du bon boulot. Nous allons même poursuivre notre collaboration en septembre ! </p>
                         <div class="source">
-                            <img src="static/img/recommandations/nicolas_framont.jpeg" alt="">
+                            <img src="public/img/recommandations/nicolas_framont.jpeg" alt="">
                             <p class="name">Solveig Vanovermeir</p>
                             <p class="role">Cheffe de la section Administration du site insee.fr</p>
                         </div>
@@ -153,40 +79,14 @@
 
             </section>
 
-        </main>
+        </main> -->
 
         <!-- FOOTER -->
         <!-- <footer>
             <h4>footer</h4>
         </footer> -->
 
-        <div class="reseaux" data-aos="fade-up" data-aos-duration="1500">
-            <ul class="social__StyledSocialList-anu6nt-0 dVLQAC fade-enter-done">
-                <li>
-                    <a href="https://github.com/thibautizard" aria-label="GitHub" target="_blank" rel="noreferrer">
-                      <img src="static/img/RS/github.svg"/>
-                    </a>
-                </li>
 
-             <li>
-                    <a href="https://twitter.com/thibautizard" aria-label="Twitter" target="_blank" rel="noreferrer">
-                        <img src="static/img/RS/twitter.svg"/>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://fr.linkedin.com/in/thibaut-izard-b9b60119b" aria-label="Linkedin" target="_blank" rel="noreferrer">
-                    <img src="static/img/RS/linkedin.svg"/>
-                 </a>
-            </li>
-
-                <li>
-                    <a href="https://codepen.io/thibautizard" aria-label="Codepen" target="_blank" rel="noreferrer">
-                        <img src="static/img/RS/codepen.svg"/>
-                    </a>
-                </li>
-            </ul>
-        </div>
 
     </body>
 </html>

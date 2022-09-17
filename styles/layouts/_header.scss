@@ -8,81 +8,6 @@ header {
 
     /* BARRE DE NAVIGATION */
 
-    nav {
-        width           : 100%;
-        margin          : 1vh 0;
-        display         : flex;
-        align-items     : center;
-        justify-content : space-between;
-
-        .initiales {
-            font-size       : 2vw;
-            font-weight     : bold;
-
-            &::after {
-
-                content        : '';
-                width          : .5vw;
-                height         : .5vw;
-                background     : var(--secondary-color);
-                position       : absolute;
-                bottom         : 0;
-                vertical-align : baseline;
-                transform      : translateY(-.5vw);
-
-            }
-        }
-
-        .liens {
-
-            display         : flex;
-            list-style      : none;
-            justify-content : flex-end;
-            align-items     : center;
-            gap             : 2vw;
-            font-size       : 1.3vw;
-            letter-spacing  : -.05vw;
-            color           : var(--primary-color);
-
-
-            .lien {
-
-                font-variant   : all-small-caps;
-                font-weight    : 600;
-                padding        : .3vw 0;
-
-                &::after {
-                    content    : '';
-                    background : var(--secondary-color);
-                    height     : .15vw;
-                    width      : 0%;
-                    position   : absolute;
-                    left       : 50%;
-                    transform  : translateX(-50%);
-                    bottom     : -.1vw;
-                    transition : width .2s ease-in-out;
-                }
-
-                &:hover::after {
-                    width      : 100%;
-                }
-            }
-
-            button {
-
-                padding        : .5vw 1vw;
-                color          : inherit;
-                letter-spacing : inherit;
-                font-weight    : 600;
-                border-radius  : .3vw;
-                background     : var(--secondary-color);
-                font-size      : inherit;
-                font-variant   : all-small-caps;
-                cursor         : pointer;
-            }
-
-        }
-    }
 
 }
 
@@ -101,6 +26,7 @@ header {
 
         min-width:50%;
         font-size:1vw;
+        flex-grow:1;
 
         .roles {
             font-size:1.5vw;
@@ -140,7 +66,8 @@ header {
     }
 
     img {
-        max-width:50%;
+        max-width:400px;
+
     }
 
 }

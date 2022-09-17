@@ -1,0 +1,24 @@
+.reseaux {
+    position:fixed;
+    bottom:2vh;
+    left:1vw;
+    width:1.2vw;
+    z-index:10;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2vw;
+    }
+
+    img {
+        transition: all .1s linear;
+        color:var(--primary-color);
+
+        &:hover {
+            color:var(--secondary-color);
+            transform:translateY(-.1vw);
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "projets" : [{
+    "title": "Statcraft",
+    "description_short" : "Statcraft est une application interne de l'Insee qui collecte, exploite et diffuse les statistiques de consultation du site insee.fr.",
+    "description_long" : "Statcraft est une application interne de l'Insee qui collecte, exploite et diffuse les statistiques de consultation du site insee.fr. <br> <br> Il s'agit d'un système d'information complet dont le point de départ est la lecture et l'analyse en R des logs journalières générées par les serveurs Apache. Pour ce faire, j'ai mis en place un <i>backoffice</i> en Rshiny permettant de lancer des batchs sur les dernières logs et de choisir les traitements à appliquer. <br><br>Les batchs permettent de séparer les différents éléments sémantiques des lignes de log pour les ventiler dans les catégories correspondantes et recourent à plusieurs API spécialisées dans l'analyse des adresses ip et des user-agent pour déterminer certaines informations complémentaires sur les visiteurs du site (localisation géographique, type d'appareil utilisé etc.) ainsi que pour hacher les informations sensibles. <br><br>Les données sont ensuite agrégées sur différentes échelles de temps et différentes variables (type de page, type de public etc.) puis insérées dans une base de données PostgreSQL. <br><br> Enfin, une interface utilisateur, également écrite en Rshiny, ouverte à tous les agents de l'Insee permet d'afficher sous forme d'indicateurs synthétiques ou de graphiques ces données et de les exporter.",
+    "prev": false,
+    "date": "2020-2022",
+    "stack": ["R", "Rshiny","Javascript","Sass","PostgreSQL", "Bash"],
+    "github": "https://thibautizard.github.io/book_reservia/",
+    "visible": true,
+    "highlight":true
+  },
+  {
+    "title": "Frustration",
+    "description_short" : "Site web du magazine de critique sociale Frustration.",
+    "description_long" : "Site web du magazine de critique sociale Frustration.",
+    "prev": "https://www.frustrationmagazine.fr/",
+    "github": "",
+    "visible": true,
+    "highlight":true
+  },
+
+    {
+      "title": "Groupomania",
+      "description_short": "Un réseau social d'entreprise pour poster des messages et des memes.",
+      "description_long": "Un réseau social d'entreprise pour poster des messages et des memes.",
+      "prev": "https://thibautizard.github.io/book_reservia/",
+      "github": "https://thibautizard.github.io/book_reservia/",
+      "visible": true,
+      "highlight":false
+    },
+
+  {
+    "title": "Sisam",
+    "description_short": "Sisam est un prototype d'application qui permet de visualiser l'allocation des bureaux de la Direction Générale de Montrouge.",
+    "description_long": "Sisam est un prototype d'application qui permet de visualiser l'allocation des bureaux de la Direction Générale de Montrouge.",
+    "prev": "https://thibautizard.github.io/book_reservia/",
+    "github": "https://thibautizard.github.io/book_reservia/",
+    "visible": true,
+    "highlight":false
+  },
+
+    {
+      "title": "Reservia",
+      "description_short": "Maquette HTML et CSS d'un site de réservations d'hôtels et d'activités.",
+      "description_long": "Maquette HTML et CSS d'un site de réservations d'hôtels et d'activités.",
+      "prev": "https://thibautizard.github.io/book_reservia/",
+      "github":"https://thibautizard.github.io/book_reservia/",
+      "visible": true,
+      "highlight":false
+    },
+
+    {
+      "title": "Oh my food!",
+      "description_short": "Maquette HTML et CSS d'un site pour consulter des restaurants et comparer leurs menus.",
+      "description_long": "Maquette HTML et CSS d'un site pour consulter des restaurants et comparer leurs menus.",
+      "prev":"https://thibautizard.github.io/book_reservia/",
+      "github": "https://thibautizard.github.io/book_reservia/",
+      "visible": false,
+      "highlight":false
+    }
+
+  ]
+}
