@@ -89,6 +89,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius              : var(--card-border-radius);
   }
 
   &:hover .bg {filter: blur(5px);}
@@ -196,6 +197,7 @@
     display: flex;
     font-weight:500;
     align-items: center;
+    cursor:pointer;
     justify-content: center;
     background-color: var(--background-color);
     color:var(--primary-color)

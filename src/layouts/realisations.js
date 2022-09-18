@@ -84,7 +84,14 @@ export default class realisations extends Component {
               </div>
 
               <div className="illustrations">
-                <img class="bg" src="https://picsum.photos/400/400" />
+                {selected?.illustrations.map((illustration) => {
+                  return (
+                    <img
+                      class="bg"
+                      src={`img/projets/${selected?.title.toLowerCase()}/framed/${illustration}`}
+                    />
+                  );
+                })}
               </div>
               <FontAwesomeIcon className="cross" icon="circle-xmark" />
             </div>
