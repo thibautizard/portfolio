@@ -1,6 +1,7 @@
 {
   "projets" : [{
     "title": "Statcraft",
+    "title_color": "white",
     "description_short" : "Statcraft est une application interne de l'Insee qui collecte, exploite et diffuse les statistiques de consultation du site insee.fr.",
     "description_long" : "Statcraft est une application interne de l'Insee qui collecte, exploite et diffuse les statistiques de consultation du site insee.fr. <br> <br> Il s'agit d'un système d'information complet dont le point de départ est la lecture et l'analyse en R des logs journalières générées par les serveurs Apache. Un <i>backoffice</i> en Rshiny permet de lancer des batchs sur les dernières logs et de choisir les traitements à appliquer. <br><br>Les batchs permettent de séparer les différents éléments sémantiques des lignes de log pour les ventiler dans les catégories correspondantes et recourent à plusieurs API spécialisées dans l'analyse des adresses ip et des <i>user-agent</i>. <br><br>Les données sont ensuite agrégées sur différentes échelles de temps et différentes variables (type de page, type de public etc.) puis insérées dans une base de données PostgreSQL. <br><br> Enfin, une application web ouverte à tous les agents de l'Insee permet d'afficher sous forme d'indicateurs synthétiques ou de graphiques ces données et de les exporter.",
     "prev": false,
@@ -9,12 +10,13 @@
     "github": false,
     "visible": true,
     "highlight":true,
-    "illustrations": ["frame_1.png", "frame_2.png", "frame_3.png", "frame_4.png", "frame_5.png", "frame_6.png", "frame_7.png"]
+    "illustrations": ["frame_1.jpg", "frame_2.jpg", "frame_3.jpg", "frame_4.jpg", "frame_5.jpg", "frame_6.jpg", "frame_7.jpg", "frame_8.jpg"]
   },
   {
     "title": "Frustration",
+    "title_color": "white",
     "description_short" : "Site web du magazine de critique sociale Frustration.",
-    "description_long" : "Site web du magazine de critique sociale Frustration.",
+    "description_long" : "<span style='font-variant: all-small-caps'> FRUSTRATION </span> est un média en ligne qui a d'abord paru sous forme de numéros papiers avant de se tourner complètement vers une formule 100% numérique. <br> <br> Pour accompagner cette transition, j'ai repensé l'interface du site en appliquant une charte graphique cohérente, plus forte et distinctive des médias concurrents. <br> <br> Parmi les chantiers achevés ou en cours pour doper l'audience du média : <ul style='list-style-type:disc; padding:0 0 0 5%'> <br> <li> Mise en place d'une newsletter pour fidéliser l'audience ; </li> <br> <li> Redéfinition responsive des jeux de police et de l'ergonomie générale des pages pour améliorer le confort de lecture </li> <br> <li> Amélioration de la page d'abonnement et transition vers une formule de paiement maison pour augmenter le taux de conversion visite/abonnement ;</li> <br> <li> Mise en place de quiz interactifs pour proposer des formats plus ludiques et accélérer la viralité du site.</li></ul>",
     "prev": "https://www.frustrationmagazine.fr/",
     "date":"2021-2022",
     "stack": ["Wordpress", "Highcharts"],
@@ -26,36 +28,50 @@
 
     {
       "title": "Groupomania",
-      "description_short": "Un réseau social d'entreprise pour poster des messages et des memes.",
+      "title_color": "white",
+      "description_short": "Réseau social d'entreprise pour poster des messages et des memes.",
       "description_long": "Un réseau social d'entreprise pour poster des messages et des memes.",
-      "prev": "https://thibautizard.github.io/book_reservia/",
-      "github": "https://thibautizard.github.io/book_reservia/",
+      "prev": "https://thibautizard.github.io/login",
+      "date":"2021",
+      "stack": ["React", "Redux", "Node", "MaterialUI", "Sass"],
+      "github": "https://github.com/thibautizard/book_groupomania",
       "visible": true,
-      "highlight":false
+      "highlight":false,
+      "illustrations": ["frame_1.png", "frame_2.png", "frame_3.png", "frame_4.png", "frame_5.png"]
     },
 
   {
     "title": "Sisam",
+    "title_color": "white",
     "description_short": "Sisam est un prototype d'application qui permet de visualiser l'allocation des bureaux de la Direction Générale de Montrouge.",
     "description_long": "Sisam est un prototype d'application qui permet de visualiser l'allocation des bureaux de la Direction Générale de Montrouge.",
     "prev": "https://thibautizard.github.io/book_reservia/",
+    "date":"2020",
+    "stack": ["React", "Sass", "SQLite", "Node"],
     "github": "https://thibautizard.github.io/book_reservia/",
     "visible": true,
-    "highlight":false
+    "highlight":false,
+    "illustrations": []
   },
 
     {
       "title": "Reservia",
-      "description_short": "Maquette HTML et CSS d'un site de réservations d'hôtels et d'activités.",
-      "description_long": "Maquette HTML et CSS d'un site de réservations d'hôtels et d'activités.",
+      "title_color": "white",
+      "description_short": "Site de réservations d'hôtels et d'activités.",
+      "description_long": "Projet personnel d'une maquette HTML et CSS d'un site de réservations d'hôtels et d'activités.",
       "prev": "https://thibautizard.github.io/book_reservia/",
       "github":"https://thibautizard.github.io/book_reservia/",
+      "date":"2020",
+      "stack": ["HTML", "CSS"],
       "visible": true,
-      "highlight":false
+      "highlight":false,
+      "illustrations": ["frame_1.png", "frame_2.png"]
+
     },
 
     {
       "title": "Oh my food!",
+      "title_color": "white",
       "description_short": "Maquette HTML et CSS d'un site pour consulter des restaurants et comparer leurs menus.",
       "description_long": "Maquette HTML et CSS d'un site pour consulter des restaurants et comparer leurs menus.",
       "prev":"https://thibautizard.github.io/book_reservia/",

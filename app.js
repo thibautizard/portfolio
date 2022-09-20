@@ -19,6 +19,7 @@ const App = () => {
     <Layout>
       <Header />
       <Realisations />
+      <img src="img/waves.svg" className="waves" />
     </Layout>
   );
 };

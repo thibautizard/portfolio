@@ -43,7 +43,9 @@ function Presentation() {
             <a href="#collaborations">COMMENT TRAVAILLER AVEC MOI</a>
           </button>
         </div>
-        <img src={pp} data-aos="zoom-out" data-aos-duration="1500" />
+        <div className="container">
+          <img src={pp} data-aos="zoom-out" data-aos-duration="1500" />
+        </div>
       </section>
       <a
         href="#realisations"

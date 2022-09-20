@@ -9,7 +9,7 @@ export default function Card({
   key,
   visible,
   highlight,
-
+  title_color,
   displayPanel,
 }) {
   const i = Math.floor(Math.random() * key + 1);
@@ -22,13 +22,21 @@ export default function Card({
           onMouseOut={restoreCardDimensions}
           onClick={displayPanel}
         >
-          <img class="bg" src="https://picsum.photos/400/400" />
+          <img
+            class="bg"
+            src={`img/projets/${title.toLowerCase()}/${
+              highlight ? "cover_highlight_compressed" : "cover_compressed"
+            }.jpg`}
+          />
 
           <section className="description">
             <div class="overlay"></div>
-            <p class="title"> {title} </p>
+            <p class="title" style={{ color: title_color }}>
+              {" "}
+              {title}{" "}
+            </p>
             <div class="details">
-              <span>{description_short}</span>
+              <span style={{ color: "white" }}>{description_short}</span>
               <div class="buttons">
                 <button class="psp">En savoir plus</button>
                 {prev && (
