@@ -9,22 +9,19 @@ import Layout from "./src/layouts/layout";
 import Header from "./src/layouts/header";
 import Realisations from "./src/layouts/realisations";
 import AOS from "aos";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import {
-  faCircleXmark,
-  faEye,
-  faArrowUpRightFromSquare,
-  faBan,
-} from "@fortawesome/free-solid-svg-icons";
+//import { library } from "@fortawesome/fontawesome-svg-core";
+// import { fab } from "@fortawesome/free-brands-svg-icons";
+
+
 import "./styles/main.scss";
+import waves from "./public/img/waves.svg";
 
 const App = () => {
   return (
     <Layout>
       <Header />
       <Realisations />
-      <img src="img/waves.svg" className="waves" />
+      <img src={waves} className="waves" />
     </Layout>
   );
 };
@@ -34,7 +31,16 @@ const root = createRoot(container);
 root.render(<App />);
 
 AOS.init();
-library.add(fab, faCircleXmark);
-library.add(fab, faEye);
-library.add(fab, faArrowUpRightFromSquare);
-library.add(fab, faBan);
+
+// library.add(fab, faCircleXmark);
+// library.add(fab, faEye);
+// library.add(fab, faArrowUpRightFromSquare);
+// library.add(fab, faBan);
+
+// function importAll(r) {
+//   return r.keys().map(r);
+// }
+
+// const images = importAll(
+//   require.context("./public/img", true, /\.(png|jpe?g|svg)$/)
+// );

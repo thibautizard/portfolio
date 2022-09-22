@@ -1,6 +1,7 @@
 const path = require("path");
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./index.html",
   filename: "./index.html",
@@ -13,6 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
+
   module: {
     rules: [
       {
@@ -27,6 +29,17 @@ module.exports = {
         exclude: /node_modules/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      // {
+      //   test: /\.(png|jpg)$/,
+      //   loader: "url-loader",
+      // },
+      // {
+      //   test: /\.json$/i,
+      //   exclude: /node_modules/,
+      //   use: {
+      //     loader: "json-loader",
+      //   },
+      // },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",

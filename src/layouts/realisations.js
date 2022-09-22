@@ -1,10 +1,18 @@
 import React, { Component } from "react";
 import Card from "../components/card/card";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { RoughNotation } from "react-rough-notation";
 import parse from "html-react-parser";
 import "./realisations.scss";
+import projets from "../../public/data/projets.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
+// import {
+//   faCircleXmark,
+//   faEye,
+//   faArrowUpRightFromSquare,
+//   faBan,
+// } from "@fortawesome/free-solid-svg-icons";
 export default class realisations extends Component {
   constructor(props) {
     super(props);
@@ -12,11 +20,7 @@ export default class realisations extends Component {
   }
 
   componentDidMount() {
-    fetch("data/projets.json")
-      .then((res) => res.json())
-      .then((data) =>
-        this.setState({ ...data, selected: 0 }, () => console.log(this.state))
-      );
+    this.setState({ ...projets, selected: 0 }, () => console.log(this.state));
   }
 
   displayPanel = (index) => {
@@ -71,10 +75,11 @@ export default class realisations extends Component {
                 <ul className="stack">
                   {selected?.stack.map((techno) => (
                     <img
-                      src={`img/icons/${techno.toLowerCase()}.png`}
+                      src={require(`../../public/img/icons/${techno.toLowerCase()}.png`)}
                       title={techno}
                       alt={techno}
                       onerror="() => this.style.display='none'"
+                      loading="lazy"
                     />
                   ))}
                 </ul>
@@ -98,18 +103,19 @@ export default class realisations extends Component {
                   </a>
                 )}
               </div>
-
               <div className="illustrations">
                 {selected?.illustrations.map((illustration) => {
                   return (
                     <img
                       class="bg"
-                      src={`img/projets/${selected?.title.toLowerCase()}/framed/${illustration}`}
+                      loading="lazy"
+                      src={require(`../../public/img/projets/${selected?.title.toLowerCase()}/framed/${illustration}`)}
                     />
                   );
                 })}
               </div>
-              <FontAwesomeIcon className="cross" icon="circle-xmark" />
+
+              <FontAwesomeIcon className="cross" icon={faCircleXmark} />
             </div>
           </div>
         </section>

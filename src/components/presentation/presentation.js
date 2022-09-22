@@ -1,6 +1,6 @@
 import React from "react";
 import pp from "../../../public/img/photo.png";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
 
 function Presentation() {
   return (
@@ -53,7 +53,6 @@ function Presentation() {
         />
       </section>
       <a
-        href="#realisations"
         data-aos="fade-down"
         data-aos-duration="2000"
         data-aos-delay="3000"

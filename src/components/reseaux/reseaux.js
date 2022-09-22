@@ -1,6 +1,11 @@
 import React from "react";
 import "./reseaux.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faCodepen,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Reseaux() {
   return (
@@ -13,7 +18,7 @@ export default function Reseaux() {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={["fab", "github"]} />
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
 
@@ -35,7 +40,7 @@ export default function Reseaux() {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={["fab", "linkedin"]} />
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
 
@@ -46,7 +51,7 @@ export default function Reseaux() {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={["fab", "codepen"]} />
+            <FontAwesomeIcon icon={faCodepen} />
           </a>
         </li>
       </ul>

@@ -67,17 +67,6 @@
       "highlight":false,
       "illustrations": ["frame_1.jpg", "frame_2.jpg"]
 
-    },
-
-    {
-      "title": "Oh my food!",
-      "title_color": "white",
-      "description_short": "Maquette HTML et CSS d'un site pour consulter des restaurants et comparer leurs menus.",
-      "description_long": "Maquette HTML et CSS d'un site pour consulter des restaurants et comparer leurs menus.",
-      "prev":"https://thibautizard.github.io/book_reservia/",
-      "github": "https://thibautizard.github.io/book_reservia/",
-      "visible": false,
-      "highlight":false
     }
 
   ]

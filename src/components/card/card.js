@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import "./card.scss";
 
@@ -13,7 +14,10 @@ export default function Card({
   title_color,
   displayPanel,
 }) {
-  const i = Math.floor(Math.random() * key + 1);
+  const background_url = require(`../../../public/img/projets/${title.toLowerCase()}/${
+    highlight ? "cover_highlight_compressed" : "cover_compressed"
+  }.jpg`);
+
   return (
     visible && (
       <div class="projet outer-card">
@@ -22,14 +26,8 @@ export default function Card({
           onMouseMove={animateCard}
           onMouseOut={restoreCardDimensions}
           onClick={displayPanel}
-          style={{
-            background: `url('img/projets/${title.toLowerCase()}/${
-              highlight ? "cover_highlight_compressed" : "cover_compressed"
-            }.jpg')`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
         >
+          <img src={background_url} />
           <section className="description">
             <div class="overlay"></div>
             <p class="title" style={{ color: title_color }}>
@@ -47,7 +45,7 @@ export default function Card({
                     target="_blank"
                     onClick="e => e.stopPropagation()"
                   >
-                    <FontAwesomeIcon icon="arrow-up-right-from-square"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </a>
                 )}
               </div>
