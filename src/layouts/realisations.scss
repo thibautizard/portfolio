@@ -38,7 +38,7 @@
       }
 
       // Mobile
-      @media (max-width: 425px) {
+      @media (max-width: 525px) {
 
           font-size: 3rem;
 
@@ -78,7 +78,7 @@
      }
 
      // Mobile
-    @media (max-width: 425px) {
+    @media (max-width: 525px) {
 
       gap:30px;
 
@@ -230,7 +230,7 @@
 
         // Tablet
         @media (max-width: 768px) {transform: translate(-20%, 20%) scale(.8);}
-        @media (max-width: 425px) {transform: translate(7%, -7%) scale(.6);}
+        @media (max-width: 525px) {transform: translate(7%, -7%) scale(.6);}
 
       }
 
@@ -255,7 +255,7 @@
 
           font-size:5rem;
           @media (max-width: 768px) {font-size:4rem;}
-          @media (max-width: 425px) {font-size:2.9rem;}
+          @media (max-width: 525px) {font-size:2.9rem;}
           @media (max-width: 375px) {font-size:2.5rem;}
           @media (max-width: 320px) {font-size:2rem;}
         }
