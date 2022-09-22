@@ -54,6 +54,7 @@
       height: 100%;
       width:100%;
       object-fit: cover;
+      transform:scale(1.05)
     }
 
   &::before {
@@ -125,7 +126,7 @@
   @media (max-width: 425px) {
     .title, &.highlight .title {
 
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
 }

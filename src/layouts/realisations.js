@@ -93,7 +93,7 @@ export default class realisations extends Component {
                     target="_blank"
                   >
                     {" "}
-                    Voir une démonstration
+                    {selected.prev_text}
                   </a>
                 ) : (
                   <a className="panel_lien" href="">

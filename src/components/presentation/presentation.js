@@ -25,7 +25,7 @@ function Presentation() {
               animationDelay="2000"
               animationDuration="1500"
             >
-              Développeur web
+              Développeur web frontend
             </RoughNotation>{" "}
             et{" "}
             <RoughNotation

@@ -27,11 +27,13 @@ header {
     @media (max-width: 768px) {
         flex-direction:column;
         justify-content : center;
+        width       : 75vw;
     }
 
     // Mobile
     @media (max-width: 525px) {
         margin-top:-10vh;
+        width       : 85vw;
     }
 
 

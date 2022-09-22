@@ -9,7 +9,7 @@ export default function navbar() {
       </a>
       <ul class="liens">
         <li class="lien">
-          <a href="#realisations">Mes derniers projets</a>
+          <a href="#realisations">Mes projets</a>
         </li>
         {/* <li class="lien">
           <a href="#competences">Compétences</a>
