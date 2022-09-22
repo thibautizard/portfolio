@@ -9,7 +9,7 @@ export default function navbar() {
       </a>
       <ul class="liens">
         <li class="lien">
-          <a href="#realisations">Réalisations</a>
+          <a href="#realisations">Mes derniers projets</a>
         </li>
         {/* <li class="lien">
           <a href="#competences">Compétences</a>
@@ -18,7 +18,9 @@ export default function navbar() {
           <a href="#recommandations">Recommandations</a>
         </li> */}
         <li>
-          <button>ME CONTACTER</button>
+          <a className="contact" href="mailto: thibaut.izard.pro@gmail.com">
+            ME CONTACTER
+          </a>
         </li>
       </ul>
     </nav>

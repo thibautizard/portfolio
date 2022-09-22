@@ -1,9 +1,6 @@
 import React from "react";
 import "./reseaux.scss";
-import github_icon from "../../../public/img/RS/github.svg";
-import twitter_icon from "../../../public/img/RS/twitter.svg";
-import linkedin_icon from "../../../public/img/RS/linkedin.svg";
-import codepen_icon from "../../../public/img/RS/codepen.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Reseaux() {
   return (
@@ -16,20 +13,20 @@ export default function Reseaux() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={github_icon} />
+            <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
         </li>
 
-        <li>
+        {/* <li>
           <a
             href="https://twitter.com/thibautizard"
             aria-label="Twitter"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={twitter_icon} />
+            <FontAwesomeIcon icon={["fab", "twitter"]} />
           </a>
-        </li>
+        </li> */}
 
         <li>
           <a
@@ -38,7 +35,7 @@ export default function Reseaux() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={linkedin_icon} />
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>
         </li>
 
@@ -49,7 +46,7 @@ export default function Reseaux() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={codepen_icon} />
+            <FontAwesomeIcon icon={["fab", "codepen"]} />
           </a>
         </li>
       </ul>

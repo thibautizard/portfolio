@@ -40,19 +40,10 @@
     height                     : var(--card-height);
     border-radius              : var(--card-border-radius);
     overflow                   : hidden;
-    /* transform                  : rotateX(0deg) rotateY(0deg);
-    transition-timing-function : ease-out; */
     position                   : relative;
-    border                     : 5px solid transparent;
+    border                     : 5px solid var(--background-color);
     box-sizing                 : border-box;
     margin                     : 0 20px;
-    /* transition-duration        : 300ms; */
-    // background-image: url(https://picsum.photos/500/300);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center center;
-    // backdrop-filter: none;
-
 
 
   &::before {
@@ -80,7 +71,7 @@
 
   }
 
-  .bg {
+  .card {
 
     transition-timing-function : ease-out;
     transform                  : scale(1.1);
@@ -92,7 +83,7 @@
     border-radius              : var(--card-border-radius);
   }
 
-  &:hover .bg {filter: blur(5px);}
+  &:hover .card {filter: blur(5px);}
 
   .title {
 
@@ -110,21 +101,32 @@
 
   }
 
-  & .title.bg-1 {  background-image: url('../../../public/img/brushes/brush.svg') }
-  & .title.bg-2 {  background-image: url('../../../public/img/brushes/brush2.svg') }
-  & .title.bg-3 {  background-image: url('../../../public/img/brushes/brush3.svg') }
-  & .title.bg-4 {  background-image: url('../../../public/img/brushes/brush4.svg') }
-  & .title.bg-5 {  background-image: url('../../../public/img/brushes/brush5.svg') }
-  & .title.bg-6 {  background-image: url('../../../public/img/brushes/brush6.svg') }
-  & .title.bg-7 {  background-image: url('../../../public/img/brushes/brush7.svg') }
-  & .title.bg-8 {  background-image: url('../../../public/img/brushes/brush8.svg') }
+  // Tablet
+  @media (max-width: 768px) {
+
+    .title, &.highlight .title {
+
+      font-size: 4rem;
+    }
+
+  }
+
+  // Mobile
+  @media (max-width: 425px) {
+    .title, &.highlight .title {
+
+      font-size: 2.5rem;
+    }
+
+}
 
   & .details {
     width:100%;
     opacity:0;
     overflow:hidden;
     transition: all .2s linear;
-     text-shadow: black 0px 2px 10px;
+    font-weight: 600;
+    text-shadow: black 0px 2px 10px;
 
   }
 
@@ -141,20 +143,44 @@
     font-family: 'Oswald';
     width:100%;
     box-sizing: border-box;
-    font-size:1rem;
+    font-size:1vw;
     top: 50%;
     transform: translate(0, -50%);
     text-align: center;
     height: 100%;
-    padding: 15% 10% 3% 10%;
+    padding: 6% 6% 3% 6%;
 
 
+    // Tablet
+    @media (max-width: 768px) {
+
+      padding: 5% 7% 3% 7%;
+
+    }
   }
 
   &.highlight .description {
-    font-size:1rem;
+    font-size:1.2vw;
 
   }
+
+  // Tablet
+  @media (max-width: 768px) {
+
+    .description, &.highlight .description {
+
+      font-size: 1rem;
+    }
+
+  }
+
+  @media (max-width: 425px) {
+    .description, &.highlight .description {
+
+      font-size: .8rem;
+    }
+
+}
 
   &:hover {
 
@@ -183,7 +209,7 @@
 
 
 .card .buttons {
-    margin-top:20px;
+    margin-top:5%;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -192,24 +218,41 @@
 
 .card .buttons .psp {
     height:var(--button-height);
-    padding:14px;
+    padding:0 7%;
+    font-size:1vw;
     border-radius:5px;
     display: flex;
-    font-weight:500;
+    font-weight:600;
     align-items: center;
     cursor:pointer;
     justify-content: center;
     background-color: var(--background-color);
-    color:var(--primary-color)
+    color:var(--primary-color);
+
+    // Tablet
+    @media (max-width: 768px) {
+
+      font-size:1rem;
+
+    }
+
+    // Tablet
+    @media (max-width: 425px) {
+
+      font-size:.8rem;
+
+    }
 }
 
 .card .buttons .prev {
       background-color:var(--secondary-color);
-      background-image:url('../../../public/img/icons/eye.svg');
       width :var(--button-height);
       height:var(--button-height);
-      background-size:calc(var(--button-height) - 12px);
+      background-size:calc(var(--button-height) - 1.5vw);
       background-position:center;
       background-repeat: no-repeat;
       border-radius:5px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
   }

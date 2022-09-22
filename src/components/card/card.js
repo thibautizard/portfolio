@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./card.scss";
 
@@ -21,14 +22,14 @@ export default function Card({
           onMouseMove={animateCard}
           onMouseOut={restoreCardDimensions}
           onClick={displayPanel}
-        >
-          <img
-            class="bg"
-            src={`img/projets/${title.toLowerCase()}/${
+          style={{
+            background: `url('img/projets/${title.toLowerCase()}/${
               highlight ? "cover_highlight_compressed" : "cover_compressed"
-            }.jpg`}
-          />
-
+            }.jpg')`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <section className="description">
             <div class="overlay"></div>
             <p class="title" style={{ color: title_color }}>
@@ -45,7 +46,9 @@ export default function Card({
                     href={prev}
                     target="_blank"
                     onClick="e => e.stopPropagation()"
-                  ></a>
+                  >
+                    <FontAwesomeIcon icon="arrow-up-right-from-square"></FontAwesomeIcon>
+                  </a>
                 )}
               </div>
             </div>
@@ -66,12 +69,10 @@ function animateCard(e) {
   ).getPropertyValue("--overlay-factor");
 
   let card = e.currentTarget;
-  let overlay = card.querySelector(".overlay");
-  let image = card.querySelector("img");
+  let overlay = e.currentTarget.parentElement.querySelector(".overlay");
 
   card.style.transitionDuration = "0ms";
   overlay.style.transitionDuration = "0ms";
-  image.style.transitionDuration = "0ms";
 
   let rect = card.getBoundingClientRect();
 
@@ -100,24 +101,20 @@ function animateCard(e) {
                               (x / (rect.width / 2) - 1) * rotationIntensity
                             }deg)`;
 
-  image.style.transform = `scale(1)
-                             translateX(${
-                               ((rect.width - x) / rect.width - 0.5) * 25
-                             }px)
-                             translateY(${
-                               ((rect.height - y) / rect.height - 0.5) * 25
-                             }px)`;
+  // card.style.transform = `scale(1)
+  //                            translateX(${
+  //                              ((rect.width - x) / rect.width - 0.5) * 25
+  //                            }px)
+  //                            translateY(${
+  //                              ((rect.height - y) / rect.height - 0.5) * 25
+  //                            }px)`;
 }
 
 function restoreCardDimensions(e) {
   let card = e.currentTarget;
   let overlay = card.querySelector(".overlay");
-  let image = card.querySelector("img");
-
   card.style.transitionDuration = "500ms";
   overlay.style.transitionDuration = "500ms";
-  image.style.transitionDuration = "500ms";
   card.style.transform = `rotateX(0deg) rotateY(0deg)`;
-  image.style.transform = "scale(1)";
   overlay.style.opacity = "0";
 }

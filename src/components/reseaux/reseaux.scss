@@ -14,10 +14,8 @@
 
     img {
         transition: all .1s linear;
-        color:var(--primary-color);
 
         &:hover {
-            color:var(--secondary-color);
             transform:translateY(-.1vw);
         }
     }

@@ -11,7 +11,12 @@ import Realisations from "./src/layouts/realisations";
 import AOS from "aos";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircleXmark,
+  faEye,
+  faArrowUpRightFromSquare,
+  faBan,
+} from "@fortawesome/free-solid-svg-icons";
 import "./styles/main.scss";
 
 const App = () => {
@@ -30,3 +35,6 @@ root.render(<App />);
 
 AOS.init();
 library.add(fab, faCircleXmark);
+library.add(fab, faEye);
+library.add(fab, faArrowUpRightFromSquare);
+library.add(fab, faBan);

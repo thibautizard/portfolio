@@ -5,10 +5,32 @@
 
 .scroll {
 
-    --Width : 1.5vw;
-    --width : .3vw;
+    // Desktop
+
+    --Width     : 1.5vw;
+    --width     : .3vw;
     --thickness : .07vw;
-    --offset : 4vh;
+    --offset    : 4vh;
+    --offset-text: 1vw;
+
+     // Tablet
+     @media (max-width: 768px) {
+        --Width     : 2.5vw;
+        --width     : .5vw;
+        --thickness : .07vw;
+        --offset    : 4vh;
+        --offset-text: 2vw;
+    }
+
+    // Mobile
+    @media (max-width: 425px) {
+        --Width     : 5vw;
+        --width     : 1vw;
+        --thickness : .2vw;
+        --offset    : 5vh;
+        --offset-text: 3vw;
+
+    }
 
     position: absolute;
     bottom: var(--offset);
@@ -42,8 +64,8 @@
         white-space: nowrap;
         left: 100%;
         top: 50%;
-        transform: translate(1vw, -50%);
-        font-size:  calc(var(--width) * 2.4);
+        transform: translate(var(--offset-text), -50%);
+        font-size:  calc(var(--width) * 3);
         color: var(--secondary-color);
         font-weight:100;
         opacity: 1;

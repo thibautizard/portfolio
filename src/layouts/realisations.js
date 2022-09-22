@@ -81,6 +81,22 @@ export default class realisations extends Component {
                 <p className="description">
                   {parse(selected?.description_long)}
                 </p>
+                {selected?.prev ? (
+                  <a
+                    href={selected.prev}
+                    className="panel_lien activated"
+                    target="_blank"
+                  >
+                    {" "}
+                    Voir une démonstration
+                  </a>
+                ) : (
+                  <a className="panel_lien" href="">
+                    {" "}
+                    <FontAwesomeIcon icon="ban"></FontAwesomeIcon> Cette
+                    application n'est pas publique
+                  </a>
+                )}
               </div>
 
               <div className="illustrations">

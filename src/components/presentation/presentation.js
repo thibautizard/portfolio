@@ -12,12 +12,12 @@ function Presentation() {
           data-os-delay="1000"
           data-aos-duration="1500"
         >
-          <h4 class="roles">Sites et applications web </h4>
+          <h4 class="headline">Sites et applications web </h4>
           <h4 class="name">
             THIBAUT
             <br /> IZARD
           </h4>
-          <p>
+          <p class="roles">
             <RoughNotation
               iterations="1"
               color="var(--secondary-color)"
@@ -43,9 +43,14 @@ function Presentation() {
             <a href="#collaborations">COMMENT TRAVAILLER AVEC MOI</a>
           </button>
         </div>
-        <div className="container">
-          <img src={pp} data-aos="zoom-out" data-aos-duration="1500" />
-        </div>
+
+        {/* PP */}
+        <img
+          src={pp}
+          data-aos="zoom-out"
+          data-aos-duration="1500"
+          data-aos-offset="0"
+        />
       </section>
       <a
         href="#realisations"

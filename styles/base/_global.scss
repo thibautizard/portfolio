@@ -37,6 +37,12 @@ body {
     width:100vw;
     min-height:100vh;
     box-sizing: border-box;
+    overflow-x:hidden;
+
+
+    .layout {
+        overflow-x:hidden;
+    }
 }
 
 .waves {
