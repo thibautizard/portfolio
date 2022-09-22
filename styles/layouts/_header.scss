@@ -29,6 +29,11 @@ header {
         justify-content : center;
     }
 
+    // Mobile
+    @media (max-width: 525px) {
+        margin-top:-10vh;
+    }
+
 
     .text {
 
@@ -58,7 +63,7 @@ header {
             }
 
             // Mobile
-            @media (max-width: 425px) {
+            @media (max-width: 525px) {
                 font-size:5vw;
             }
 
@@ -81,7 +86,7 @@ header {
             }
 
             // Mobile
-            @media (max-width: 425px) {
+            @media (max-width: 525px) {
                 font-size:15vw;
                 line-height: 15vw;
             }
