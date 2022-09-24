@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.scss";
 
-export default function navbar() {
+export default function Navbar() {
   return (
     <nav data-aos="fade-down" data-aos-duration="1500">
       <a href="" class="initiales">
@@ -9,7 +9,7 @@ export default function navbar() {
       </a>
       <ul class="liens">
         <li class="lien">
-          <a href="#realisations">Mes projets</a>
+          <a href="#projets">Mes projets</a>
         </li>
         {/* <li class="lien">
           <a href="#competences">Compétences</a>

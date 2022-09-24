@@ -8,11 +8,10 @@ export default function Card({
   description_short,
   prev,
   github,
-  key,
   visible,
   highlight,
   title_color,
-  displayPanel,
+  handleDisplayPanel,
 }) {
   const background_url = require(`../../../public/img/projets/${title.toLowerCase()}/${
     highlight ? "cover_highlight_compressed" : "cover_compressed"
@@ -25,7 +24,7 @@ export default function Card({
           class={`card ${highlight && "highlight"}`}
           onMouseMove={animateCard}
           onMouseOut={restoreCardDimensions}
-          onClick={displayPanel}
+          onClick={handleDisplayPanel}
         >
           <img src={background_url} />
           <section className="description">

@@ -5,24 +5,22 @@
 
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Layout from "./src/layouts/layout";
-import Header from "./src/layouts/header";
-import Realisations from "./src/layouts/realisations";
+import Header from "./src/sections/header/header";
+import Projets from "./src/sections/projets/projets";
+import Reseaux from "./src/components/reseaux/reseaux";
+import Waves from "./src/components/waves/waves";
 import AOS from "aos";
-//import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fab } from "@fortawesome/free-brands-svg-icons";
-
 
 import "./styles/main.scss";
-import waves from "./public/img/waves.svg";
 
 const App = () => {
   return (
-    <Layout>
+    <>
       <Header />
-      <Realisations />
-      <img src={waves} className="waves" />
-    </Layout>
+      <Projets />
+      <Waves fill="#07111a" />
+      <Reseaux />
+    </>
   );
 };
 
@@ -32,15 +30,10 @@ root.render(<App />);
 
 AOS.init();
 
-// library.add(fab, faCircleXmark);
-// library.add(fab, faEye);
-// library.add(fab, faArrowUpRightFromSquare);
-// library.add(fab, faBan);
-
-// function importAll(r) {
-//   return r.keys().map(r);
-// }
-
-// const images = importAll(
-//   require.context("./public/img", true, /\.(png|jpe?g|svg)$/)
-// );
+// Apparition et disparition du curseur incitant à défiler
+window.addEventListener("scroll", (_) => {
+  const scroll = document.querySelector(".scroll");
+  const position = parseInt(window.scrollY);
+  scroll.setAttribute("data-aos-delay", "0");
+  scroll.style.opacity = position !== 0 ? "0" : "1";
+});
