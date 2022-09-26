@@ -1,5 +1,6 @@
 import React from "react";
 import pp from "../../../public/img/photo.png";
+import "./presentation.scss";
 import { RoughNotation } from "react-rough-notation";
 
 function Presentation() {

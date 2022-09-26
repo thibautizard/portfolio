@@ -22,29 +22,6 @@
     align-items: center;
     background:var(--background-color);
 
-    .titre {
-      font-size: 4rem;
-      justify-self: flex-start;
-      align-self: start;
-      font-weight: bold;
-      margin-bottom: 50px;
-      top: 5%;
-
-        // Tablet
-      @media (max-width: 768px) {
-
-        font-size: 4rem;
-
-      }
-
-      // Mobile
-      @media (max-width: 525px) {
-
-          font-size: 3rem;
-
-    }
-    }
-
     .projets {
 
       display:grid;

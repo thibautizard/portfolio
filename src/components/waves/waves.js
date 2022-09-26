@@ -9,7 +9,12 @@ export default function Waves(props) {
       height="220"
       viewBox="0 0 1921 220"
       fill="none"
-      style={{ transform: "translateY(-1px)", zIndex: -10 }}
+      style={{
+        transform: "translateY(-1px)",
+        zIndex: -10,
+        width: "100vw",
+        height: "auto",
+      }}
     >
       <mask
         id="mask0"

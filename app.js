@@ -7,6 +7,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import Header from "./src/sections/header/header";
 import Projets from "./src/sections/projets/projets";
+import Prestations from "./src/sections/prestations/prestations";
 import Reseaux from "./src/components/reseaux/reseaux";
 import Waves from "./src/components/waves/waves";
 import AOS from "aos";
@@ -19,6 +20,7 @@ const App = () => {
       <Header />
       <Projets />
       <Waves fill="#07111a" />
+      <Prestations />
       <Reseaux />
     </>
   );

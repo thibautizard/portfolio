@@ -1,6 +1,6 @@
 import React from "react";
 import { RoughNotation } from "react-rough-notation";
-
+import "./titleSection.scss";
 export default function TitleSection(props) {
   return (
     <RoughNotation
@@ -21,7 +21,7 @@ TitleSection.defaultProps = {
   type: "underline",
   iterations: 4,
   animationDelay: 1000,
-  animationDuration: 2000,
+  animationDuration: 1000,
   color: "var(--secondary-color)",
   show: true,
 };
