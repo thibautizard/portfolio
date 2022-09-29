@@ -14,6 +14,11 @@ export default function Navbar() {
         <li class="lien">
           <a href="#prestations">Prestations</a>
         </li>
+        <li class="lien">
+          <a href="CV/CV.pdf" target="_blank">
+            CV
+          </a>
+        </li>
         {/* <li class="lien">
           <a href="#competences">Compétences</a>
         </li>

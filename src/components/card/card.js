@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import "./card.scss";
 
@@ -17,9 +18,22 @@ export default function Card({
     highlight ? "cover_highlight_compressed" : "cover_compressed"
   }.jpg`);
 
+  const aosZooms = [
+    "zoom-out",
+    "zoom-out-up",
+    "zoom-out-down",
+    "zoom-out-left",
+    "zoom-out-right",
+  ];
+
   return (
     visible && (
-      <div class="projet outer-card">
+      <div
+        class="projet outer-card"
+        data-aos={aosZooms[Math.ceil(Math.random() * aosZooms.length) - 1]}
+        data-aos-delay={300 * Math.ceil(Math.random() * 3)}
+        data-aos-duration={1500}
+      >
         <div
           class={`card ${highlight && "highlight"}`}
           onMouseMove={animateCard}
@@ -36,11 +50,20 @@ export default function Card({
             <div class="details">
               <span style={{ color: "white" }}>{description_short}</span>
               <div class="buttons">
-                <button class="psp">En savoir plus</button>
+                {github && (
+                  <a
+                    class="psp"
+                    href={github}
+                    target="_blank"
+                    onClick="e => e.stopPropagation()"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                )}
                 {prev && (
                   <a
                     class="prev"
-                    href={prev}
+                    href={github}
                     target="_blank"
                     onClick="e => e.stopPropagation()"
                   >

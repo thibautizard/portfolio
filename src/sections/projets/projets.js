@@ -4,6 +4,7 @@ import React, { Component, useState } from "react";
 import TitleSection from "../../components/titleSection/titleSection";
 import Miniatures from "../../components/miniatures/miniatures";
 import PanelProjet from "../../components/panelProjet/panelProjet";
+import Background from "../../layouts/background_realisations";
 
 // CSS
 import "./projets.scss";
@@ -19,6 +20,9 @@ export default function Projets() {
 
   return (
     <section id="projets">
+      {/* Background */}
+      <Background />
+
       {/* Titre */}
       <TitleSection title="Mes projets" />
 

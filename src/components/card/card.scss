@@ -102,6 +102,7 @@
     font-weight         : bold;
     margin-bottom       : 10px;
     text-shadow         : rgb(111, 111, 111) 0px 2px 3px;
+    display:none;
 
   }
 
@@ -138,6 +139,7 @@
     transition: all .2s linear;
     font-weight: 600;
     text-shadow: black 0px 2px 10px;
+    display:none;
 
   }
 
@@ -196,7 +198,7 @@
   &:hover {
 
     cursor             : pointer;
-    border-color       :  var(--secondary-color);
+    // border-color       :  var(--secondary-color);
 
   }
 }
@@ -224,12 +226,12 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    gap:20px;
+    gap:10px;
 }
 
 .card .buttons .psp {
+    width :var(--button-height);
     height:var(--button-height);
-    padding:5px 20px;
     font-size:1vw;
     border-radius:5px;
     display: flex;
