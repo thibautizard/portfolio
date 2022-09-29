@@ -1,4 +1,5 @@
 import React from "react";
+import pdf from "../../../public/CV/CV.pdf";
 import "./navbar.scss";
 
 export default function Navbar() {
@@ -15,7 +16,7 @@ export default function Navbar() {
           <a href="#prestations">Prestations</a>
         </li>
         <li class="lien">
-          <a href="CV/CV.pdf" target="_blank">
+          <a href={pdf} target="_blank">
             CV
           </a>
         </li>
