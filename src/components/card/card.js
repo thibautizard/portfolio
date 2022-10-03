@@ -16,7 +16,7 @@ export default function Card({
 }) {
   const background_url = require(`../../../public/img/projets/${title.toLowerCase()}/${
     highlight ? "cover_highlight_compressed" : "cover_compressed"
-  }.jpg`);
+  }.webp`);
 
   const aosZooms = [
     "zoom-out",

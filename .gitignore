@@ -1,4 +1,6 @@
 photos
 node_modules
 *.ai
+projets/**/*.png
+projets/**/*.jpg
 dist

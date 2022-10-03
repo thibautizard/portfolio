@@ -55,7 +55,7 @@ function PanelProjet(props) {
                 <img
                   class="bg"
                   loading="lazy"
-                  src={require(`../../../public/img/projets/${props.title.toLowerCase()}/framed/${illustration}`)}
+                  src={require(`../../../public/img/projets/${props.title.toLowerCase()}/framed_compressed/${illustration}`)}
                 />
               );
             })}
