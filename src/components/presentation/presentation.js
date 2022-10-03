@@ -1,5 +1,5 @@
 import React from "react";
-import pp from "../../../public/img/photo.png";
+import pp from "../../../public/img/pp.webp";
 import "./presentation.scss";
 import { RoughNotation } from "react-rough-notation";
 
