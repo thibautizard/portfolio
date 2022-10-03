@@ -12,9 +12,9 @@ export default function Navbar() {
         <li class="lien">
           <a href="#projets">Projets</a>
         </li>
-        <li class="lien">
+        {/* <li class="lien">
           <a href="#prestations">Prestations</a>
-        </li>
+        </li> */}
         <li class="lien">
           <a href={pdf} target="_blank">
             CV
