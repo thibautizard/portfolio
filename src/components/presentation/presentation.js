@@ -40,9 +40,9 @@ function Presentation() {
             </RoughNotation>{" "}
             basé à <b>Toulouse</b> (France)
           </p>
-          {/* <button>
-            <a href="#collaborations">COMMENT TRAVAILLER AVEC MOI</a>
-          </button> */}
+          <button>
+            <a href="#prestations">COMMENT TRAVAILLER AVEC MOI</a>
+          </button>
         </div>
 
         {/* PP */}

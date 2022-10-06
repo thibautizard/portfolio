@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Site vitrine",
+        "subtitle": "Pour exposer votre passion, votre projet, votre association, un évènement etc.",
+        "price": {"base": "500€"}
+    },
+    {
+        "title": "E-commerce",
+        "subtitle": "Lancez votre business en ligne et livrez la meilleure expérience possible à vos clients !",
+        "price": {"base": "750€"}
+    },
+    {
+        "title": "Application",
+        "subtitle": "Besoin d'un développeur pour renforcer une équipe sur un projet ambitieux ?",
+        "price": {"base": "400€"}
+    }
+]

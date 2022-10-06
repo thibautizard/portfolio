@@ -94,6 +94,7 @@ function animateCard(e) {
   card.style.transitionDuration = "0ms";
   overlay.style.transitionDuration = "0ms";
 
+  focusCard(card.parentElement);
   let rect = card.getBoundingClientRect();
 
   const [x, y] = [e.clientX - rect.left, e.clientY - rect.top];
@@ -119,7 +120,7 @@ function animateCard(e) {
   }deg)
                             rotateY(${
                               (x / (rect.width / 2) - 1) * rotationIntensity
-                            }deg)`;
+                            }deg) scale(1.05)`;
 
   // card.style.transform = `scale(1)
   //                            translateX(${
@@ -137,4 +138,19 @@ function restoreCardDimensions(e) {
   overlay.style.transitionDuration = "500ms";
   card.style.transform = `rotateX(0deg) rotateY(0deg)`;
   overlay.style.opacity = "0";
+  loseFocusCard(card.parentElement);
+}
+
+function focusCard(card) {
+  const allCards = card.parentElement.childNodes;
+  allCards.forEach((cardToCheck) => {
+    if (cardToCheck !== card) cardToCheck.style.filter = "brightness(0.5)";
+  });
+}
+
+function loseFocusCard(card) {
+  const allCards = card.parentElement.childNodes;
+  allCards.forEach(
+    (cardToCheck) => (cardToCheck.style.filter = "brightness(1)")
+  );
 }
