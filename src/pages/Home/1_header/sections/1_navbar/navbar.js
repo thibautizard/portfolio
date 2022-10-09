@@ -28,9 +28,12 @@ export default function Navbar() {
           <a href="#recommandations">Recommandations</a>
         </li> */}
         <li>
-          <Link className="contact" to="/contact">
+          {/* <Link className="contact" to="/contact">
             ME CONTACTER
-          </Link>
+          </Link> */}
+          <a href="mailto:thibaut.izard@gmail.com" className="contact">
+            ME CONTACTER
+          </a>
         </li>
       </ul>
     </nav>
