@@ -1,7 +1,7 @@
 import React from "react";
 
 // CSS
-import "./panel.scss";
+import "./Panel.scss";
 
 // Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
