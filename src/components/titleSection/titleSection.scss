@@ -10,13 +10,25 @@
     @media (max-width: 768px) {
 
       font-size: 4rem;
+      align-self: center;
+        justify-self: center;
 
     }
 
     // Mobile
-    @media (max-width: 525px) {
+                @media (max-width: 500px) {
+        
+                  font-size: 3.2rem;
+                  align-self: center;
+                  justify-self: center;
+        
+                }
 
-        font-size: 3rem;
+                                // Mobile
+                                @media (max-width: 375px) {
+                                  font-size: 2.4rem;
+                                  align-self: center;
+                                  justify-self: center;
 
-  }
+}
   }

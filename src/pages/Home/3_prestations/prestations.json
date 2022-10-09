@@ -1,0 +1,168 @@
+[
+    {
+        "title": "Site vitrine",
+        "subtitle": "Pour exposer votre passion, votre projet, votre association, un évènement etc.",
+        "prices": ["750", "1250", "1750"],
+        "formules": ["Base", "Étendu", "Complet"],
+        "devise": "€",
+        "color":"#16b572",
+        "items" : [
+            {
+                "name":"Hébergement et domaine",
+                "precision": "",
+                "levels": [1,2,3]
+            },
+
+            {
+                "name": "Charte graphique web",
+                "precision": "Logos, visuels",
+                "levels" : [1]
+            },
+
+            {
+                "name": "Charte graphique <em>web + papier</em>",
+                "precision": "Logos, visuels, en-têtes, cartes de visite, flyers",
+                "levels" : [2,3]
+            },
+            {
+                "name": "Compatible tous supports",
+                "precision": "Ordinateurs de bureaux, laptops, tablettes, mobiles",
+                "levels": [1,2,3]
+            },
+            {
+                "name": "<em>Fonctionnalités avancées</em>",
+                "precision": "Newsletters, widgets, graphiques, formulaires, réservations, sondages etc.",
+                "levels": [2]
+            },
+            {
+                "name": "<em>Plus de fonctionnalités avancées</em> ",
+                "precision": "Newsletters, widgets, graphiques, formulaires, réservations, sondages etc.",
+                "levels": [3]
+            },
+            {
+                "name": "Référencement adapté",
+                "precision": "",
+                "levels": [1,2,3]
+            },
+            {
+                "name": "Formation utilisation 2h",
+                "precision": "",
+                "levels": [1,2,3]
+            },
+            {
+                "name": "Guide d'utilisation",
+                "precision": "",
+                "levels": [1,2,3]
+            },
+            {
+                "name": "<em>Garantie maintenance 1 an</em>",
+                "precision": "",
+                "levels": [2]
+            },
+            {
+                "name": "<em>Garantie maintenance et retouches 1 an</em>",
+                "precision":"",
+                "levels": [3]
+            },
+            {
+                "name": "<em>Sécurite renforcée</em>",
+                "precision":"",
+                "levels": [3]
+            }
+        ]
+    },
+    {
+        "title": "E-commerce",
+        "subtitle": "Lancez votre business en ligne et livrez la meilleure expérience possible à vos clients !",
+        "prices": ["1000", "1500", "2000"],
+        "formules": ["Base", "Étendu", "Complet"],
+        "devise": "€",
+        "color": "#727171",
+        "items" : [
+            {
+                "name":"Hébergement et domaine",
+                "precision": "",
+                "levels": [1,2,3]
+            },
+
+            {
+                "name": "Charte graphique web",
+                "precision": "Logos, visuels",
+                "levels" : [1]
+            },
+
+            {
+                "name": "Charte graphique web et papier",
+                "precision": "Logos, visuels, en-têtes, cartes de visite, flyers",
+                "levels" : [2,3]
+            },
+            {
+                "name": "Compatible tous supports",
+                "precision": "Ordinateurs de bureaux, laptops, tablettes, mobiles",
+                "levels": [1,2,3]
+            },
+
+            {
+                "name": "Boutique en ligne",
+                "precision": "",
+                "levels" : [1]
+            },
+
+            {
+                "name": "Suivi et gestion des paiements",
+                "precision": "",
+                "levels" : [1]
+            },
+
+            {
+                "name": "Quelques fonctionnalités avancées ()",
+                "precision": "Newsletters, widgets, graphiques, formulaires, réservations, sondages etc.",
+                "levels": [2]
+            },
+            {
+                "name": "Plus de fonctionnalités avancées",
+                "precision": "Newsletters, widgets, graphiques, formulaires, réservations, sondages etc.",
+                "levels": [3]
+            },
+            {
+                "name": "Référencement adapté",
+                "precision": "",
+                "levels": [1,2,3]
+            },
+            {
+                "name": "Formation utilisation 2h",
+                "precision": "",
+                "levels": [1,2,3]
+            },
+            {
+                "name": "Guide d'utilisation",
+                "precision": "",
+                "levels": [1,2,3]
+            },
+            {
+                "name": "Garantie maintenance 1 an",
+                "precision": "",
+                "levels": [2, 3]
+            },
+            {
+                "name": "Garantie maintenance et retouches 1 an",
+                "precision":"",
+                "levels": [3]
+            },
+            {
+                "name": "Sécurite renforcée",
+                "precision":"",
+                "levels": [3]
+            }
+        ]
+    },
+    {
+        "title": "Freelance",
+        "subtitle": "Besoin d'un développeur pour renforcer votre équipe sur un projet ambitieux ?",
+        "prices": ["400"],
+        "formules": ["Forfait jour"],
+        "devise": "€",
+        "color":"#07111a"
+
+    }
+]

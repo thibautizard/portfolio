@@ -4,27 +4,22 @@
 // Eventually add to scripts in package.json : "start": "webpack serve --config webpack.config.js"
 
 import React from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { createRoot } from "react-dom/client";
-import Header from "./src/sections/header/header";
-import Background from "./src/layouts/background_accueil";
-import Projets from "./src/sections/projets/projets";
-import Prestations from "./src/sections/prestations/prestations";
-import Reseaux from "./src/components/reseaux/reseaux";
-import Waves from "./src/components/waves/waves";
+import Home from "./src/pages/Home/Home"
+import Contact from "./src/pages/Contact/Contact"
 import AOS from "aos";
 
 import "./styles/main.scss";
 
 const App = () => {
   return (
-    <>
-      <Background />
-      <Header />
-      <Projets />
-      <Waves fill="#07111a" />
-      {/* <Prestations /> */}
-      <Reseaux />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/contact" element={<Contact/>}/>
+      </Routes>
+    </Router>
   );
 };
 

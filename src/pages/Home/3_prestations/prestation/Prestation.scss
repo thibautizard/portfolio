@@ -1,0 +1,216 @@
+.container-prestation {
+
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, .1);
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0px;
+    transition: height 1s linear;
+
+    &:nth-child(1) .item::marker {
+            color: #16b572;
+        }
+    
+        &:nth-child(2) .item::marker {
+            color: #727171;
+        }
+    
+        &:nth-child(3) .item::marker {
+            color: #07111a;
+        }
+    
+        // Small laptop
+        @media (max-width: 1200px) {
+            width: 100%;
+            flex: 1 1 auto;
+    
+            height: auto;
+            flex-direction: column;
+        }
+.header {
+    width: 100%;
+        padding: 0 10%;
+        box-sizing: border-box;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 2rem;
+        color: white;
+
+    }
+
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+
+        // Small laptop
+            @media (max-width: 1200px) {
+                font-size: 4rem;
+            }
+        
+            // Mobile
+            @media (max-width: 525px) {
+                font-size: 2.9rem;
+            }
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        
+            // Small laptop
+            @media (max-width: 1200px) {
+                font-size: 1.3rem;
+            }
+        
+            // Mobile
+            @media (max-width: 525px) {
+                font-size: 1.2rem;
+            }
+    }
+
+.price {
+        font-size: 2.5rem;
+        font-weight: bold;
+
+        // Small laptop
+            @media (max-width: 1200px) {
+                font-size: 4rem;
+            }
+        
+            // Mobile
+            @media (max-width: 525px) {
+                font-size: 3rem;
+            }
+        &::after {
+            content: ' TTC';
+            font-size: 0.7rem;
+// Small laptop
+    @media (max-width: 1200px) {
+        font-size: 1.4rem;
+    }
+
+    // Mobile
+    @media (max-width: 525px) {
+        font-size: 1rem;
+    }
+}
+}
+
+.formule {
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-variant: all-small-caps;
+
+    // Small laptop
+    @media (max-width: 1200px) {
+        font-size: 2rem;
+    }
+
+    // Mobile
+    @media (max-width: 525px) {
+        font-size: 1.7rem;
+    }
+
+}
+
+.slider-container {
+    width: 80%;
+    margin: auto;
+}
+
+.details {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+    gap: 10px;
+    padding-bottom: 30px;
+
+    // Small laptop
+    @media (max-width: 1200px) {
+        gap: 20px;
+        padding: 0 50px;
+    }
+
+    // Mobile
+    @media (max-width: 525px) {
+        gap: 15px;
+        padding: 0 40px;
+    }
+
+    @keyframes itemOpacity {
+        from {
+            opacity: 0;
+            scale: 1;
+            translate: 0 20px;
+        }
+
+        to {
+            opacity: 1;
+            scale: 1;
+            translateY: 0 0px;
+        }
+    }
+
+    .item {
+
+        animation: itemOpacity 1s;
+
+        &::marker {
+            font-family: 'Font Awesome 6 Free';
+            content: '\f00c ';
+        }
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+
+        // Small laptop
+        @media (max-width: 1200px) {
+            font-size: 1.3rem;
+        }
+
+        // Mobile
+        @media (max-width: 525px) {
+            font-size: 1rem;
+        }
+
+
+        .name {
+            font-size: 1rem;
+            margin-left: 10px;
+
+            // Small laptop
+            @media (max-width: 1200px) {
+                font-size: 1.3rem;
+            }
+
+            // Mobile
+            @media (max-width: 525px) {
+                font-size: 1.2rem;
+            }
+        }
+
+
+
+        .precision {
+            font-size: .7rem;
+            color: grey;
+            margin-left: 10px;
+        }
+
+        em {
+            font-weight: 600;
+        }
+        }
+}
+}
