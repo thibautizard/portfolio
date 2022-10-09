@@ -7,7 +7,7 @@ import PanelProjet from "./sections/2_panel/Panel";
 import Background from "./sections/0_background/Background";
 
 // CSS
-import "./projets.scss";
+import "./Projets.scss";
 
 // JSON
 import data_projets from "./projets.json";
